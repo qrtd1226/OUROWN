@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>web - Our Own</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+</head>
+<body>
+<div class="menu-backdrop" id="menuBackdrop"></div>
+
+<header class="logo-header" id="ourownHeader">
+    <button class="menu-open" id="menuOpen">
+        <i class="fi fi-rr-menu-burger"></i>
+    </button>
+
+    <a href="index.html.html" class="logo-text">OUROWN</a>
+
+    <div class="header-icons">
+        <a href="#" id="searchOpen"><i class="fi fi-rr-search"></i></a>
+        <a href="#"><i class="fi fi-rr-user"></i></a>
+        <a href="#"><i class="fi fi-rr-star"></i></a>
+        <a href="#"><i class="fi fi-rr-shopping-bag"></i></a>
+    </div>
+</header>
+
+<div class="side-menu" id="sideMenu">
+    <div class="side-menu-header">
+        <span>MENU</span>
+        <button class="menu-close" id="menuClose">×</button>
+    </div>
+
+    <div class="menu-section">
+        <button class="menu-section-title">남성</button>
+        <div class="menu-section-content">
+            <a href="men.html">전체보기</a>
+            <a href="#">향수</a>
+            <a href="#">의류</a>
+        </div>
+    </div>
+
+    <div class="menu-section">
+        <button class="menu-section-title">여성</button>
+        <div class="menu-section-content">
+            <a href="women.html">전체보기</a>
+            <a href="#">향수</a>
+            <a href="#">의류</a>
+        </div>
+    </div>
+
+    <div class="menu-section">
+        <button class="menu-section-title">신상품</button>
+        <div class="menu-section-content">
+            <a href="#">2026 NEW EDITION</a>
+            <a href="#">PERFUME NEW EDITION</a>
+            <a href="#">BEST</a>
+        </div>
+    </div>
+
+    <div class="menu-section">
+        <button class="menu-section-title">악세서리</button>
+        <div class="menu-section-content">
+            <a href="accessories.html">전체보기</a>
+            <a href="#">가방</a>
+            <a href="#">주얼리</a>
+            <a href="#">기타</a>
+        </div>
+    </div>
+</div>
+
+
+<div class="photo-grid center">
+    <div class="photo-card center"> <img src="womenperfume.home.jpg" alt="Perfume.home">
+    <div class="hero-text"><div class="reveal">PERFUME NEW EDITION
+          <p style="font-size: 24px;">2026 새로운 여성향수 컬렉션 라벤더와 바닐라의 조화</p> 
+    </div>
+    </div>
+    </div>
+</div>
+
+
+        <div class="perfume-grid">
+        <div class="perfume-card">
+            <img src="3.jpg" alt="Dior Style 1">
+            <div class="hero-text2">NEW EDITION 01 <a href="#" class="view-more-white">More</a></div>
+        </div>
+        <div class="perfume-card">
+            <img src="3.jpg" alt="Dior Style 2">
+            <div class="hero-text2">NEW EDITION 02 <a href="#" class="view-more-white">More</a></div>
+        </div>
+        <div class="perfume-card">
+            <img src="3.jpg" alt="Dior Style 3">
+            <div class="hero-text2">NEW EDITION 03 <a href="#" class="view-more-white">More</a></div>
+        </div>
+        <div class="perfume-card">
+            <img src="3.jpg" alt="Dior Style 4">
+            <div class="hero-text2">NEW EDITION 04 <a href="#" class="view-more-white">More</a></div>
+        </div>
+        <div class="perfume-card">
+            <img src="3.jpg" alt="Dior Style 5">
+            <div class="hero-text2">NEW EDITION 05 <a href="#" class="view-more-white">More</a></div>
+        </div>
+        <div class="perfume-card">
+            <img src="3.jpg" alt="Dior Style 6">
+            <div class="hero-text2">NEW EDITION 06 <a href="#" class="view-more-white">More</a></div>
+        </div>
+        <div class="perfume-card">
+            <img src="3.jpg" alt="Dior Style 7">
+            <div class="hero-text2">NEW EDITION 07 <a href="#" class="view-more-white">More</a></div>
+        </div>
+        <div class="perfume-card">
+            <img src="3.jpg" alt="Dior Style 8">
+            <div class="hero-text2">NEW EDITION 08 <a href="#" class="view-more-white">More</a></div>   
+        </div>
+    </div>
+
+
+    <div class="search-overlay" id="searchOverlay">
+    <button class="search-close" id="searchClose">×</button>
+
+    <div class="search-box">
+        <input type="text" placeholder="Search" id="searchInput">
+    </div>
+</div>
+    <script>
+window.addEventListener('scroll', function() {
+    let scrollPos = window.scrollY;
+    let mainBanner = document.querySelector('.photo-card.center');
+    let opacity = 1 - (scrollPos / 600);
+    if (opacity >= 0) {
+        mainBanner.style.opacity = opacity;
+    } else {
+        mainBanner.style.opacity = 0;
+    }
+});
+</script>
+<script src="script.js"></script>
+</body>
+</html>
